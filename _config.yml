@@ -2,5 +2,5 @@ name: s3nh's Pensieve
 markdown: redcarpet
 pygments: false
 description: "S3nh blog."
-url: "jekyll-new.joelglovier.com"
+url: "s3nh.github.io"
 permalink: /posts/:title
