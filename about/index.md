@@ -3,8 +3,13 @@ layout: page
 title: About
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+It is a place in which I started to clear my head. 
+Data Scientist with MSC in Econophysics.
+Beside fighting with anxieties i decided to put a lot of effort in 
+spare time projects. This resulted in a s3nh.github.io creation.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Do not hesitate to contact me. 
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+S3nh. 
+
+
