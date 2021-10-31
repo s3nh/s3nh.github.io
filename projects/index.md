@@ -3,12 +3,9 @@ layout: page
 title: Projects
 ---
 
-Just a sample of another page that you could include for some purpose in the primary navigation.
+I am mainly interested in deep learning projects, which 
+can generate additive value and can be used by the others. 
 
-This could be a great place to list your own projects. But to get you started, here's some handy links:
+You can watch some of my work at my github profile:
 
-- [List of Jekyll-powered websites](https://github.com/jekyll/jekyll/wiki/Sites)
-- [Octopress, a Jekyll based blog framework](https://github.com/octopress/)
-- [Jekyll documentation](http://jekyllrb.com/)
-- [Jekyll source on GitHub](https://github.com/jekyll/jekyll)
-- [Available plugins](http://jekyllrb.com/docs/plugins/#available_plugins)
+- [S3nh github profile](https://github.com/s3nh)
