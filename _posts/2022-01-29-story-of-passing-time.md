@@ -11,4 +11,4 @@ This story is not actually creation which is constructively rethought, it is not
  diligently planned and fit into some kinds of norm. As assumed in my earlier
 writings, it is just a bunch of thoughts that comes to my mind, which I am too scared to share IRL but want to let them fly.
 
-I always though that in all that complexity and 
+I always thought that in all that complexity that today world offer us
