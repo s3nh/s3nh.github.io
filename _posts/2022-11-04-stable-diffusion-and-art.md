@@ -1,4 +1,10 @@
-# Stable diffusion and art, my observations.
+---
+layout: post
+title: "Stable diffusion and ar"
+categories: routine
+author: "s3nh"
+meta: "Stable diffusion"
+---
 
 I'm not passionate about art. I will never be passionate about art.
 However, I have always been fascinated by the thought process that goes on in the artist's head,
