@@ -90,11 +90,11 @@ More abstract example, but also interesting.
 # Eating breakfast on sunny day
 
 
-![image](https://raw.githubusercontent.com/s3nh/s3nh.github.io/master/_assets/_assets/ebsd.png)
+![image](https://raw.githubusercontent.com/s3nh/s3nh.github.io/master/_assets/ebsd.png)
 
 
 
-![image](https://raw.githubusercontent.com/s3nh/s3nh.github.io/master/_assets/_assets/ebsd2.png)
+![image](https://raw.githubusercontent.com/s3nh/s3nh.github.io/master/_assets/ebsd2.png)
 
 
 Thanks to paperspace for giving an opportunity to fine tune that kind of model with relatively low costs. 
