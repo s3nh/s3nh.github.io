@@ -30,7 +30,7 @@ the hand of a master who was certainly Zdzisław Beksiński.
 
 I link the history of the Beksiński family to those who are interested,
 
--[History of Beksinski family](https://theculturetrip.com/europe/poland/articles/the-tragic-story-of-zdzislaw-beksinski-the-artist-who-inspired-guillermo-del-toro/)
+- [History of Beksinski family](https://theculturetrip.com/europe/poland/articles/the-tragic-story-of-zdzislaw-beksinski-the-artist-who-inspired-guillermo-del-toro/)
 
 and I will quickly go to how I implemented this issue.
 
