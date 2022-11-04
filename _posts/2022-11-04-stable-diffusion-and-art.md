@@ -30,7 +30,7 @@ the hand of a master who was certainly Zdzisław Beksiński.
 
 I link the history of the Beksiński family to those who are interested,
 
--https://theculturetrip.com/europe/poland/articles/the-tragic-story-of-zdzislaw-beksinski-the-artist-who-inspired-guillermo-del-toro/
+-[History of Beksinski family](https://theculturetrip.com/europe/poland/articles/the-tragic-story-of-zdzislaw-beksinski-the-artist-who-inspired-guillermo-del-toro/)
 
 and I will quickly go to how I implemented this issue.
 
@@ -41,10 +41,9 @@ Diffusion models have their basis in the theory of thermodynamic imbalance,
 and interested in math heavy elements, I encourage you to read
 
 
-- https://arxiv.org/abs/1503.03585
+- [Original Paper](https://arxiv.org/abs/1503.03585)
 
-- https://lilianweng.github.io/posts/2021-07-11-diffusion-models/ honestly, the best explanation of diffusion models.
-
+- [honestly, the best explanation of diffusion models](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
 
 So I decided to fine tune stable-diffusion (v1.5) model on Zdzislaw Beksinski artwork,
 using different artwork as an regularization models.
