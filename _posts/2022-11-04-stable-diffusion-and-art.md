@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stable diffusion and ar"
+title: "Stable diffusion and art - Beksinski style"
 categories: routine
 author: "s3nh"
 meta: "Stable diffusion"
@@ -30,6 +30,7 @@ the hand of a master who was certainly Zdzisław Beksiński.
 
 I link the history of the Beksiński family to those who are interested,
 
+-https://theculturetrip.com/europe/poland/articles/the-tragic-story-of-zdzislaw-beksinski-the-artist-who-inspired-guillermo-del-toro/
 
 and I will quickly go to how I implemented this issue.
 
