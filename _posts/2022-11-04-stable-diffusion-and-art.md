@@ -53,18 +53,18 @@ I encourage you to watch.
 
 
 
-![image](/../_assets/bus2.png)
+![image](../_assets/bus2.png)
 
 # Car traffic, beksinski style
 
 
-![image](/../_assets/_cartraffic.png)
+![image](s3nh.github.io/../_assets/_cartraffic.png)
 
 
-![image](/../_assets/car_traffic.png)
+![image](s3nh.github.io/../_assets/car_traffic.png)
 
 
-![image](/../_assets/car_traffic2.png)
+![image](s3nh.github.io/../_assets/car_traffic2.png)
 
 
 
