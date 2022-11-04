@@ -49,7 +49,7 @@ I encourage you to watch.
 ### Bus riding to school, beksinski style 
 
 
-<img src="https://github.com/s3nh/s3nh.github.io/blob/master/_assets/bus1.png">
+<img src="../_assets/bus1.png">
 
 
 
