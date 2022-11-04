@@ -49,11 +49,11 @@ I encourage you to watch.
 ### Bus riding to school, beksinski style 
 
 
-<img src="../_assets/bus1.png">
+<img src="../_assets/bus1.png"/>
 
 
 
-![image](/_assets/bus2.png)
+![image](./_assets/bus2.png)
 
 # Car traffic, beksinski style
 
