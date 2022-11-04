@@ -4,3 +4,4 @@ pygments: false
 description: "S3nh blog."
 url: "s3nh.github.io"
 permalink: /posts/:title
+baseurl: #/s3nh.github.io
