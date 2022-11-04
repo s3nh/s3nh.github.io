@@ -59,7 +59,7 @@ I encourage you to watch.
 
 
 
-![image](/_assets/bus2.png)
+![image](./_assets/bus2.png)
 
 # Car traffic, beksinski style
 
