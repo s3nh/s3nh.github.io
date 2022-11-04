@@ -64,7 +64,7 @@ I encourage you to watch.
 # Car traffic, beksinski style
 
 
-![image](https://github.com/s3nh/s3nh.github.io/blob/master/_assets/_cartraffic.png)
+![image](https://raw.githubusercontent.com/s3nh/s3nh.github.io/master/_assets/_cartraffic.png)
 
 
 ![image](https://github.com/s3nh/s3nh.github.io/blob/master/_assets/car_traffic.png)
