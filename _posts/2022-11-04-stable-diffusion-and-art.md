@@ -49,22 +49,22 @@ I encourage you to watch.
 ### Bus riding to school, beksinski style 
 
 
-![image](../_assets/bus1.png)
+![image](/../_assets/bus1.png)
 
 
 
-![image](../_assets/bus2.png)
+![image](/../_assets/bus2.png)
 
 # Car traffic, beksinski style
 
 
-![image](../_assets/_cartraffic.png)
+![image](/../_assets/_cartraffic.png)
 
 
-![image](../_assets/car_traffic.png)
+![image](/../_assets/car_traffic.png)
 
 
-![image](../_assets/car_traffic2.png)
+![image](/../_assets/car_traffic2.png)
 
 
 
@@ -73,18 +73,18 @@ I encourage you to watch.
 More abstract example, but also interesting. 
 
 
-![image](../_assets/dog_drinking_coffee.png)
+![image](/../_assets/dog_drinking_coffee.png)
 
 
 
 # Eating breakfast on sunny day
 
 
-![image](../_assets/ebsd.png)
+![image](/../_assets/ebsd.png)
 
 
 
-![image](../_assets/ebsd2.png)
+![image](/../_assets/ebsd2.png)
 
 
 
