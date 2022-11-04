@@ -49,22 +49,22 @@ I encourage you to watch.
 ### Bus riding to school, beksinski style 
 
 
-![image](s3nh.github.io/_assets/bus1.png)
+![image](https://github.com/s3nh/s3nh.github.io/blob/master/_assets/bus1.png)
 
 
 
-![image](/s3nh.github.io/_assets/bus2.png)
+![image](https://github.com/s3nh/s3nh.github.io/blob/master/_assets/bus2.png)
 
 # Car traffic, beksinski style
 
 
-![image](/s3nh.github.io/_assets/_cartraffic.png)
+![image](https://github.com/s3nh/s3nh.github.io/blob/master/_assets/_cartraffic.png)
 
 
-![image](/s3nh.github.io/_assets/car_traffic.png)
+![image](https://github.com/s3nh/s3nh.github.io/blob/master/_assets/car_traffic.png)
 
 
-![image](/s3nh.github.io/_assets/car_traffic2.png)
+![image](https://github.com/s3nh/s3nh.github.io/blob/master/_assets/car_traffic2.png)
 
 
 
@@ -73,18 +73,18 @@ I encourage you to watch.
 More abstract example, but also interesting. 
 
 
-![image](/s3nh.github.io/_assets/dog_drinking_coffee.png)
+![image](https://github.com/s3nh/s3nh.github.io/blob/master/_assets/dog_drinking_coffee.png)
 
 
 
 # Eating breakfast on sunny day
 
 
-![image](/s3nh.github.io/_assets/ebsd.png)
+![image](https://github.com/s3nh/s3nh.github.io/blob/master/_assets/ebsd.png)
 
 
 
-![image](/s3nh.github.io/_assets/ebsd2.png)
+![image](https://github.com/s3nh/s3nh.github.io/blob/master/_assets/ebsd2.png)
 
 
 
