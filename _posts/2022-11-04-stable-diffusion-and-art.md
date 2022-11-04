@@ -55,7 +55,7 @@ I encourage you to watch.
 ### Bus riding to school, beksinski style 
 
 
-<img src="s3nh.github.io/_assets/bus1.png"/>
+<img src="{{site.baseurl}}/_assets/bus1.png"/>
 
 
 
