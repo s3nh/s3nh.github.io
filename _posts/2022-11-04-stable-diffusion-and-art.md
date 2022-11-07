@@ -6,6 +6,29 @@ author: "s3nh"
 meta: "Stable diffusion"
 ---
 
+
+Edit: 2022-11-07
+
+
+# Release
+This model can be used just like any other Stable Diffusion model. For more information,
+please have a look at the [Stable Diffusion](https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion).
+
+You can also export the model to [ONNX](https://huggingface.co/docs/diffusers/optimization/onnx), [MPS](https://huggingface.co/docs/diffusers/optimization/mps) and/or [FLAX/JAX]().
+
+```python
+#!pip install diffusers transformers scipy torch
+from diffusers import StableDiffusionPipeline
+import torch
+model_id = "s3nh/beksinski-style-stable-diffusion"
+pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float16)
+pipe = pipe.to("cuda")
+prompt = "Bus riding to school, beksinski style"
+image = pipe(prompt).images[0]
+image.save("./example_output.png")
+```
+
+
 I'm not passionate about art. I will never be passionate about art.
 However, I have always been fascinated by the thought process that goes on in the artist's head,
 especially in the case that we will describe today.
