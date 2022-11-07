@@ -15,12 +15,43 @@ Deep learning in 2022 is a resource-hungry success, and I have repeated opportun
 how to tool itself specs for finished projects.
 There are several possibilities in the search engine:
 
-- computer location, which allowed me to train local and local ML models
-- borrowing, which will allow me to mean that it is about the drive on the machine on the transition mechanism.
+- rig station,  which allowed me to train model locally 
+- Cloud computing services, which allows me to perform calculation on cloud (someone elses computer).
 
 
 For a long time I often have to use Colab, Colab Pro, COlaba Pro +, and I accept all inconveniences it brought to the solution. I felt that the amount of added value was enough.
-The elements of the graphic layout were introduced in technical solutions that the disadvantages of the solution began to overtake its advantages. Time constraint, even on stations with CPU, you will speed up the distinction between subscription levels, stations added in a way.
+But after changes in Colab Policy (adding compute units for every instance), the disadvantages of the solution began to overtake its advantages. 
+List only few of them:
+
+- Lack of consistency of specification on every level of subscription
+- Compute units consumption time is not clear at all, and if I understand correctly, not the  same for every user. 
+- On Pro you still have to keep your session active, otherwise it will disconnect
+- Terminal: it is great that it is possible to use it, but why it is so laggy?
 
 
-... 
+### Time to change 
+
+So yeah, it was not usable anymore, and also not so cheap. 
+So after fast research I tried paperspace which suprised me with a list of free Tier gpu and subscription plan. 
+Tried Pro plan, 8$ a month, seems pretty solid. I was really aware of potential additional costs, but there was not much of them. 
+The only thing is, you have to be really careful about storage space if you do not want to pay much more than subscription payment. 
+
+
+## First impression. 
+
+Really clear jump straight to some semantic segmentation task. 
+There are some predefined environments, which is nice (pytorch, huggingface, dall-e, etc, mostly focused on deeop learning projects).
+Also terminals works pretty well, it is not laggy at all. 
+So I have a feeling like I am writing a code on my private laptop. 
+There are also possibilities of build an workflow, deploy a model as an api, 'just with a few clicks', which I ll describe in more details in the future. 
+
+Interface is clear enough, everything seems to flow fluent, and there is no session disconnection after turning off you station, so it is usefuil. 
+The only disadvantage which I am aware of is that instances can be borrowed for 6h only, max. 
+It means that if you want to train something bigger at once, which requires many hours of training, it is not possible on Free Tiers Gpu. 
+But it is doable on GPU with pricing option, which is solid. 
+
+## Summarization 
+
+Paperspace.com is a really good alternative for low budget computing machines, at the moment I jump straight to the Growth plan, 
+which cost about 39$ monthly, but give me a nice vibe, and i do not have to worry about buying physical rig station. 
+On growth plan there are Free tiers with A6000 48gb, A100 80gb, which can be really useful for hype trained task, like fine tuning stable diffusion. 
