@@ -10,6 +10,9 @@ meta: "Stable diffusion"
 Edit: 2022-11-07
 
 
+<a href="https://www.buymeacoffee.com/s3nh"><img src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" alt=""></a>
+
+
 # Release
 This model can be used just like any other Stable Diffusion model. For more information,
 please have a look at the [Stable Diffusion](https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion).
