@@ -13,7 +13,7 @@ Remember to always check for compability before spending time on specific task.
 I am just one step before deployment semantic segmentation task, 
 starting to use  pytorch profiler to check for eventual bootlenecks. 
 
-Spent some time on optimization, whn just after switch to cpu,
+Spent some time on optimization, when just after switch to cpu,
 perform ```model.half()``` , 
 prediction  return errors. 
 
