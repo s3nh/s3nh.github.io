@@ -20,7 +20,7 @@ prediction  return errors.
 
 https://github.com/open-mmlab/mmdetection/issues/2951
 
-It is new, this is  caused by my lack of awareness. 
+It is not new, caused by my lack of awareness. 
 Pytorch profiler as a next nice thing to write about. 
 
 
