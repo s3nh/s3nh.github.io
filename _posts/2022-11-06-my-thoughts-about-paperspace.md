@@ -6,6 +6,7 @@ author: "s3nh"
 meta: "Cloud Computing"
 ---
 
+<a href="https://www.buymeacoffee.com/s3nh"><img src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" alt=""></a>
 
 I am a big fan of implementing projects in my spare time.
 I don't have too much of that last time, but I'm still trying not to drop out of the game.
@@ -55,3 +56,7 @@ But it is doable on GPU with pricing option, which is solid.
 Paperspace.com is a really good alternative for low budget computing machines, at the moment I jump straight to the Growth plan, 
 which cost about 39$ monthly, but give me a nice vibe, and i do not have to worry about buying physical rig station. 
 On growth plan there are Free tiers with A6000 48gb, A100 80gb, which can be really useful for hype trained task, like fine tuning stable diffusion. 
+
+
+All opinions are my own. 
+S3nh
