@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TIL 20221108"
+title: "TIL 20221108 - pytorch, cpu and fp16. short story"
 categories: routine
 author: "s3nh"
 meta: "Things I've learned"
