@@ -1,9 +1,11 @@
 ---
-license: creativeml-openrail-m
-tags:
-- stable-diffusion
-- text-to-image
+layout: post
+title: "TIL 20221109 - SD Fine tuned, Zelda Botw styled."
+categories: routine
+author: "s3nh"
+meta: "Stable diffusion; Breathe of The Wild"
 ---
+
 
 Buy me a coffee if you like this project ;)
 
