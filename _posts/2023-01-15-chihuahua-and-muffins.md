@@ -15,11 +15,17 @@ It is interesting because it is a real-world problem that requires the applicati
 
 There are several different approaches that could be used to develop a solution for recognizing chihuahuas and muffins. Here is one example:
 
-    Collect and label a large dataset of images of chihuahuas and muffins. This dataset should include a variety of images of each object, captured in different lighting conditions, angles and backgrounds.
+    Collect and label a large dataset of images of chihuahuas and muffins. 
+    This dataset should include a variety of images of each object, captured in different lighting conditions, angles and backgrounds.
 
-    Use this dataset to train a convolutional neural network (CNN) for object recognition. The CNN can be trained using a supervised learning approach, where the network is provided with labeled images of chihuahuas and muffins and learns to classify new images based on patterns learned from the training data.
+    Use this dataset to train a convolutional neural network (CNN) for object recognition.
+    The CNN can be trained using a supervised learning approach,
+    where the network is provided with labeled images of chihuahuas and muffins and 
+    learns to classify new images based on patterns learned from the training data.
 
-    Once the network has been trained, it can be used to classify new images of chihuahuas and muffins. The network will output a probability score for each class, indicating the likelihood that a given image belongs to that class.
+    Once the network has been trained, it can be used to classify new images of chihuahuas and muffins.
+    The network will output a probability score for each class, 
+    indicating the likelihood that a given image belongs to that class.
 
     Finally, a threshold can be set, to decide when the system is confident enough to make a prediction.
 
