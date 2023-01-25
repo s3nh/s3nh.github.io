@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Calculate Additional Value of Machine Learning Projects"
+title: "Zor and the story of perfect world"
 categories: routine
 author: "s3nh"
 meta: "Things I've learned"
