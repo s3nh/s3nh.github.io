@@ -101,7 +101,11 @@ def load_tokenizer(name):
 
 def generate_prompt(instruction: str, input: str, response: str):
     if input:
-        return f"""Poniżej znajduje się instrukcja opisująca zadanie, połączona z danymi wejściowymi, które zapewniają dalszy konktekst. Napisz odpowiedź, która odpowiednio odpowie na pytanie.
+        return f"""Poniżej znajduje się instrukcja
+        opisująca zadanie,
+        połączona z danymi wejściowymi
+        , które zapewniają dalszy konktekst.
+        Napisz odpowiedź, która odpowiednio odpowie na pytanie.
 
 ### Instruction:
 {instruction}
