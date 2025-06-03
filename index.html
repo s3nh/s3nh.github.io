@@ -1,17 +1,24 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> <a class="post-link" href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>s3nh's blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>s3nh's blog</h1>
+    
+    <div class="post-list">
+        <p><a href="posts/2025-06-03-hello-world.html">2025-06-03</a>: Hello World</p>
+        <!-- Add more posts here as you create them -->
+    </div>
+    
+    <div class="footer">
+        <p>
+            <a href="https://github.com/s3nh">github</a> |
+            <a href="index.html">home</a>
+        </p>
+    </div>
+</body>
+</html>
