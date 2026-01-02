@@ -1,24 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>s3nh's blog</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s3nh // terminal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
+
+        :root {
+            --bg-color: #0a0a0a;
+            --text-color: #00ff41; /* Matrix Green */
+            --glow-color: rgba(0, 255, 65, 0.5);
+            --scanline-color: rgba(18, 16, 16, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+            text-shadow: 0 0 5px var(--glow-color);
+        }
+
+        /* Scanline Effect */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(var(--scanline-color) 50%, rgba(0, 0, 0, 0) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 2;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+
+        /* CRT Flicker */
+        @keyframes flicker {
+            0% { opacity: 0.97; }
+            5% { opacity: 0.95; }
+            10% { opacity: 0.9; }
+            15% { opacity: 0.95; }
+            20% { opacity: 0.98; }
+            50% { opacity: 0.96; }
+            80% { opacity: 0.99; }
+            100% { opacity: 1; }
+        }
+
+        .terminal {
+            animation: flicker 0.15s infinite;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .prompt { color: #ff00ff; } /* Pink prompt */
+        .command { color: #00d9ff; } /* Cyan command */
+
+        .header { margin-bottom: 2rem; border-bottom: 1px dashed var(--text-color); padding-bottom: 1rem; }
+        
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            border: 1px solid var(--text-color);
+            padding: 2px 8px;
+            margin-right: 10px;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            background: var(--text-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 15px var(--text-color);
+        }
+
+        .typewriter {
+            overflow: hidden;
+            white-space: pre-wrap;
+            margin: 0 auto;
+            letter-spacing: .10em;
+        }
+
+        #cursor {
+            display: inline-block;
+            width: 10px;
+            height: 1.2em;
+            background-color: var(--text-color);
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            from, to { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        section { margin-top: 2rem; }
+        ul { list-style: none; padding: 0; }
+        li { margin: 10px 0; }
+        li::before { content: "> "; }
+
+    </style>
 </head>
 <body>
-    <h1>s3nh's blog</h1>
-    
-    <div class="post-list">
-        <p><a href="/_posts/2025-06-03-hello-world.html">2025-06-03</a>: Hello World</p>
-        <!-- Add more posts here as you create them -->
+    <div class="terminal">
+        <header class="header">
+            <div>[ SYSTEM STATUS: ONLINE ]</div>
+            <div>[ USER: s3nh ]</div>
+            <div>[ LOCATION: GITHUB_PAGES ]</div>
+        </header>
+
+        <div class="typewriter">
+            <span class="prompt">s3nh@root:~$</span> <span class="command">whoami</span>
+            <p>I am a developer exploring the fringes of the web. This is my digital footprint.</p>
+            
+            <span class="prompt">s3nh@root:~$</span> <span class="command">ls ./projects</span>
+            <ul>
+                <li><a href="#">Project_Alpha</a> - A experimental tool for X</li>
+                <li><a href="#">Project_Beta</a> - Distributed systems research</li>
+                <li><a href="#">Dotfiles</a> - My terminal configurations</li>
+            </ul>
+
+            <span class="prompt">s3nh@root:~$</span> <span class="command">cat contact.txt</span>
+            <p>Email: s3nh@proton.me<br>
+               GitHub: <a href="https://github.com/s3nh">github.com/s3nh</a></p>
+
+            <span class="prompt">s3nh@root:~$</span> <span id="typed-text"></span><span id="cursor"></span>
+        </div>
     </div>
-    
-    <div class="footer">
-        <p>
-            <a href="https://github.com/s3nh">github</a> |
-            <a href="index.html">home</a>
-        </p>
-    </div>
+
+    <script>
+        const text = "Initializing secure connection... Done. Welcome to the void.";
+        const speed = 50;
+        let i = 0;
+
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typed-text").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        window.onload = typeWriter;
+    </script>
 </body>
 </html>
