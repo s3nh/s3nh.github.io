@@ -3,153 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>s3nh // terminal</title>
+    <title>S3NH // SYSTEM_OVERVIEW</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap');
-
         :root {
             --bg-color: #0a0a0a;
-            --text-color: #00ff41; /* Matrix Green */
-            --glow-color: rgba(0, 255, 65, 0.5);
-            --scanline-color: rgba(18, 16, 16, 0.1);
+            --text-color: #00ff41; /* Classic Terminal Green */
+            --accent-color: #008f11;
+            --border-style: 1px solid #00ff41;
+            --font-main: 'Courier New', Courier, monospace;
         }
 
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: 'Fira Code', monospace;
+            font-family: var(--font-main);
             margin: 0;
             padding: 20px;
+            line-height: 1.5;
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            overflow-x: hidden;
-            text-shadow: 0 0 5px var(--glow-color);
+            justify-content: center;
         }
 
-        /* Scanline Effect */
-        body::before {
-            content: " ";
-            display: block;
-            position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background: linear-gradient(var(--scanline-color) 50%, rgba(0, 0, 0, 0) 50%), 
-                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-            z-index: 2;
-            background-size: 100% 2px, 3px 100%;
-            pointer-events: none;
-        }
-
-        /* CRT Flicker */
-        @keyframes flicker {
-            0% { opacity: 0.97; }
-            5% { opacity: 0.95; }
-            10% { opacity: 0.9; }
-            15% { opacity: 0.95; }
-            20% { opacity: 0.98; }
-            50% { opacity: 0.96; }
-            80% { opacity: 0.99; }
-            100% { opacity: 1; }
-        }
-
-        .terminal {
-            animation: flicker 0.15s infinite;
+        .container {
             max-width: 800px;
             width: 100%;
-            margin: 0 auto;
         }
 
-        .prompt { color: #ff00ff; } /* Pink prompt */
-        .command { color: #00d9ff; } /* Cyan command */
+        header {
+            border-bottom: var(--border-style);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
 
-        .header { margin-bottom: 2rem; border-bottom: 1px dashed var(--text-color); padding-bottom: 1rem; }
-        
+        h1 { font-size: 1.5rem; margin: 0; }
+        .glitch-text { text-transform: uppercase; letter-spacing: 2px; }
+
+        .block {
+            border: var(--border-style);
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            position: relative;
+            background: rgba(0, 255, 65, 0.02);
+        }
+
+        .block-header {
+            position: absolute;
+            top: -12px;
+            left: 10px;
+            background: var(--bg-color);
+            padding: 0 5px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            color: var(--text-color);
+        }
+
+        .data-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .data-list li::before {
+            content: "> ";
+        }
+
         a {
             color: var(--text-color);
             text-decoration: none;
-            border: 1px solid var(--text-color);
-            padding: 2px 8px;
-            margin-right: 10px;
-            transition: all 0.2s ease;
+            border-bottom: 1px dashed var(--text-color);
         }
 
         a:hover {
             background: var(--text-color);
             color: var(--bg-color);
-            box-shadow: 0 0 15px var(--text-color);
         }
 
-        .typewriter {
-            overflow: hidden;
-            white-space: pre-wrap;
-            margin: 0 auto;
-            letter-spacing: .10em;
+        .timestamp {
+            font-size: 0.7rem;
+            text-align: right;
+            opacity: 0.6;
         }
 
-        #cursor {
-            display: inline-block;
-            width: 10px;
-            height: 1.2em;
-            background-color: var(--text-color);
-            animation: blink 1s step-end infinite;
-            vertical-align: middle;
+        /* Scanline effect - subtle, non-blinking */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 2;
+            background-size: 100% 4px, 3px 100%;
+            pointer-events: none;
         }
-
-        @keyframes blink {
-            from, to { opacity: 1; }
-            50% { opacity: 0; }
-        }
-
-        section { margin-top: 2rem; }
-        ul { list-style: none; padding: 0; }
-        li { margin: 10px 0; }
-        li::before { content: "> "; }
-
     </style>
 </head>
 <body>
-    <div class="terminal">
-        <header class="header">
-            <div>[ SYSTEM STATUS: ONLINE ]</div>
-            <div>[ USER: s3nh ]</div>
-            </div>
-        </header>
 
-        <div class="typewriter">
-            <span class="prompt">s3nh@root:~$</span> <span class="command">whoami</span>
-            <p>Vibecode me pls senpai</p>
-            
-            <span class="prompt">s3nh@root:~$</span> <span class="command">ls ./projects</span>
-            <ul>
-                <li><a href="#">Project_Alpha</a> - A experimental tool for X</li>
-                <li><a href="#">Project_Beta</a> - Distributed systems research</li>
-                <li><a href="#">Dotfiles</a> - My terminal configurations</li>
-            </ul>
+<div class="container">
+    <header>
+        <h1 class="glitch-text">S3NH.SYS_V2.0.4</h1>
+        <p>Status: <span style="color: #fff;">ONLINE</span> | Location: Unknown</p>
+    </header>
 
-            <p>Models: <a href="https://hf.co/s3nh">s3nh's hf</a><br>
-               GitHub: <a href="https://github.com/s3nh">github.com/s3nh</a></p>
-
-            <span class="prompt">s3nh@root:~$</span> <span id="typed-text"></span><span id="cursor"></span>
-        </div>
+    <div class="block">
+        <div class="block-header">IDENTITY.LOG</div>
+        <p>Independent researcher focusing on minimal systems, cryptography, and digital footprints.</p>
     </div>
 
-    <script>
-        const text = "Initializing secure connection... Done. Welcome to the void.";
-        const speed = 50;
-        let i = 0;
+    <div class="block">
+        <div class="block-header">PROJECTS.EXE</div>
+        <ul class="data-list">
+            <li><a href="#">Neural-Net-Parser</a> - Scrapping the void</li>
+            <li><a href="#">Ghost-Config</a> - Minimalist dotfiles</li>
+            <li><a href="#">Static-Void</a> - This website</li>
+        </ul>
+    </div>
 
-        function typeWriter() {
-            if (i < text.length) {
-                document.getElementById("typed-text").innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
+    <div class="block">
+        <div class="block-header">CONNECT.LINK</div>
+        <ul class="data-list">
+            <li>GitHub: <a href="https://github.com/s3nh">@s3nh</a></li>
+            <li>Twitter: <a href="#">@s3nh_dev</a></li>
+            <li>PGP: <a href="#">0xDEADC0DE...</a></li>
+        </ul>
+    </div>
 
-        window.onload = typeWriter;
-    </script>
+    <div class="timestamp">
+        LAST_UPDATED: 2026-01-02_14:00_UTC
+    </div>
+</div>
+
 </body>
 </html>
